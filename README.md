@@ -2,7 +2,7 @@
 
 
 
-<사용 기술>
+**<사용 기술>**
 1. SpringBoot + Kotlin
 
 2. Multi Module Gradle
