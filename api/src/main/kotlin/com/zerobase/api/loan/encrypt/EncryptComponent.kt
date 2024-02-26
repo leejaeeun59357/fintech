@@ -22,11 +22,14 @@ class EncryptComponent {
         return String(encoder.encode(encryptedString))
     }
 
-    fun decryptString(decryptString: String): String {
-        val byteString = decoder.decode(decryptString.toByteArray(Charsets.UTF_8))
 
-        return String(cipherPkcs5(Cipher.DECRYPT_MODE, SECRET_KEY).doFinal(byteString))
-    }
+    // decryptString 함수 사용되지 않음
+    // 구현 필요
+//    fun decryptString(decryptString: String): String {
+//        val byteString = decoder.decode(decryptString.toByteArray(Charsets.UTF_8))
+//
+//        return String(cipherPkcs5(Cipher.DECRYPT_MODE, SECRET_KEY).doFinal(byteString))
+//    }
 
     fun cipherPkcs5(opMode: Int, secretKey: String): Cipher {
         val c = Cipher.getInstance("AES/CBC/PKCS5Padding")

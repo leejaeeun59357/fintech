@@ -1,6 +1,5 @@
 package com.zerobase.consumer.service
 
-//import com.zerobase.consumer.dto.ReviewResponseDto
 import com.zerobase.consumer.dto.ReviewResponseDto
 import com.zerobase.domain.domain.LoanReview
 import com.zerobase.domain.repository.LoanReviewRepository
